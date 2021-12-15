@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
 
-const PROJECTID = process.env.REACT_APP_PROJECT_ID;
-
 
 const Login = () => {
     const [username, setUserName] = useState('');
@@ -14,7 +12,7 @@ const Login = () => {
         e.preventDefault();
 
         const authObject = {
-            'Project-ID': {PROJECTID},
+            'Project-ID': '1028b5f5-9033-4300-ad6f-300f02295c88',
             'User-Name': username,
             'User-Secret': password
         }
