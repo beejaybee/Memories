@@ -6,7 +6,6 @@ import Login from './components/Login'
 
 import './App.css'
 
-const PROJECTID = process.env.REACT_APP_PROJECT_ID;
 const App = () => {
 
     if(!localStorage.getItem('username')) return <Login />
